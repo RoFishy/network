@@ -15,6 +15,7 @@ function Remote.new(Type : string) : Remote
     local self : Remote = setmetatable({} :: any, Remote)
     self._janitor = Janitor.new()
     self.Remote = self._janitor:Add(Instance.new(Type))
+    self.Remote.Parent = script
 
     return self
 end
