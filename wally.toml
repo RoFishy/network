@@ -1,0 +1,9 @@
+[package]
+name = "rofishy/network"
+version = "0.1.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+[dependencies]
+Janitor = "howmanysmall/janitor@1.17.0"
+Promise = "evaera/promise@4.0.0"
