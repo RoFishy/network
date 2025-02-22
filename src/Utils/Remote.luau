@@ -1,5 +1,8 @@
 export type Remote = typeof(setmetatable({}, {})) & {
     Remote : RemoteEvent | RemoteFunction,
+    Fire : (Data : any?) -> (),
+    OnServerEvent : (Callback : (Player : Player, any) -> ()) -> (),
+    OnClientEvent : (Callback : (any) -> ()) -> ()
 }
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
